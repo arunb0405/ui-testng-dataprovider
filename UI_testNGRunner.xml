@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="UiSuite" data-provider-thread-count="2">
+    <parameter name="uname"  value="admin"/>
+    <parameter name="passwd"  value="password"/>
+    <parameter name="baseUrl"  value="https://app.mediaportal.com/#/login"/>
+    <test name="ApiTest">
+        <classes>
+            <class name="SeleniumUITest" />
+        </classes>
+    </test>
+</suite>
